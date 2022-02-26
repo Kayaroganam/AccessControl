@@ -44,6 +44,7 @@ while True:
 		os.system("ls")
 		selected_file = input("access control > Enter File or Directory name: ")
 		selected_group = input("access control > Enter group name: ")
+		os.system(f"sudo chgrp {selected_group} {selected_file}")
 		break
 	elif select == 'help' or select == 'HELP' or select == 'Help' or select == 'h' or select == 'H':
 		main_help()
