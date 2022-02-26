@@ -26,11 +26,11 @@ while True:
 			os.system(f"sudo chmod u+{owner_perm} {selected_file}")
 			pass
 		if group_perm != '':
-			os.system("sudo chmod g-rwx {selected_file}")
+			os.system(f"sudo chmod g-rwx {selected_file}")
 			os.system(f"sudo chmod g+{group_perm} {selected_file}")
 			pass
 		if others_perm != '':
-			os.system("sudo chmod o-rwx {selected_file}")
+			os.system(f"sudo chmod o-rwx {selected_file}")
 			os.system(f"sudo chmod o+{others_perm} {selected_file}")
 			pass
 
