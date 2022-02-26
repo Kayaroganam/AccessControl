@@ -47,6 +47,7 @@ while True:
 		os.system("ls")
 		selected_file = input("access control > Enter File or Directory name: ")
 		selected_group = input("access control > Enter group name: ")
+		os.system(f"sudo chgrp {selected_group} {selected_file}")
 		break
 
 
